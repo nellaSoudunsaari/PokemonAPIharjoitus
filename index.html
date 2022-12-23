@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pokemon api</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body onload="loadCache()">
+
+    <div class="sivupalkki"> <!--sivupalkki 25%-->
+      <h1>Pokemon API</h1>
+
+      <div style="padding-bottom: 10px;">
+          <input type="text" placeholder="" id="name">          
+          <input type="image" id="imgbtn" src="nappi.png" onclick="requestPokemon()">
+          <input type="image" id="imgbtn" src="nappi2.png" onclick="randomPokemon()">
+          <!--<button onclick="requestPokemon()">ETSI</button>-->
+
+      </div>
+
+      <ul id="cache" style="list-style: none;">
+      </ul>
+
+    </div>
+
+
+    <div class="tausta">
+      <div class="pokemonit"> <!--pokemonit 25%-->
+        <div>
+            <img src="" alt="" id="artwork">
+        </div>
+
+        <div style="padding-left: 10px;">
+          <h2 id="title"></h2>
+          <p id="xp"></p>
+          <p id="height"></p>
+          <p id="weight"></p>
+          <p id="types"></p>
+        </div>
+
+      </div>
+
+      <div class="pokemonit-tiedot"> <!--pokemonit-tiedot 25%-->
+        <p id="stats"></p>
+        <p id="abilities"></p>
+      </div>
+
+      <div class="pokemonit-tiedot"> <!--pokemonit-tiedot 25%-->
+        <p id="moves"></p>
+      </div>
+
+    </div>
+
+
+
+
+    <script src="moves.js"></script>
+    <script src="fetch.js"></script>
+  </body>
+</html>

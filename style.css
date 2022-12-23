@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+.sivupalkki {
+  width: 25%;
+  float: left;
+}
+
+.pokemonit {
+  width: 50%;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.pokemonit-tiedot {
+  width: 25%;
+  float: left;
+}
+
+.tausta {
+  width: 75%;
+  float: left;
+  background-color: rgb(34, 34, 34);
+  position: relative;
+  top: -10px;
+  right: -8px;
+  height: 980px;
+
+}
+
+@font-face {
+  font-family: pokemon;
+  src: url(Pokemon Solid.ttf);
+}
+
+@font-face {
+  font-family: pokemon2;
+  src: url(PokemonGb-RAeo.ttf);
+}
+
+body{
+  background-color: #2b6578;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: pokemon;
+  font-size: 50px;
+  margin-top: 0px;
+  padding-top: 0px;
+  top: -20px;
+  position: relative;
+}
+
+ul{
+  text-decoration: none;
+  height: 600px;
+  overflow:hidden; 
+  overflow-y:scroll;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  font-family: pokemon2;
+  padding: 5px;
+  text-decoration: none;
+}
+
+p {
+  font-family: pokemon2;
+  font-size: small;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-family: pokemon2;
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+#name {
+  height: 40px;
+  background-color: white;
+}
+
+#imgbtn {
+  position: relative;
+  top: 20px;
+}
+
+#imgbtn:hover{
+  background-image: "./nappi3.png";
+}
+
+.miniimg {
+  width: 25%;
+  top: 50px;
+  right: 40px;
+  position:relative;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
